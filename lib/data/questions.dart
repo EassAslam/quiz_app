@@ -1,10 +1,11 @@
-import 'package:quiz_app/quiz_question.dart';
+import 'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion('How did Edwar Elric lose his arm in FMA?', [
     'Putting his brothers soul in a suit of armor',
     'in a duel',
     'he never had any arms',
+    'he fell from his ninja H2 R',
   ]),
   QuizQuestion('What is the capital city of France?', [
     'Paris',
