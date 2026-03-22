@@ -34,13 +34,15 @@ class ResultsScreen extends StatelessWidget {
       return data['correct_answer'] == data['user_answer'];
     }).length;
 
-    return SizedBox(
-      width: double.infinity,
-      child: Container(
-        margin: const EdgeInsets.all(40),
+     return SizedBox(
+    width: double.infinity,
+    child: SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.all(30),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 40),
+
             Text(
               'You answered $numTotalCorrect out of $numTotalQuestions questions correctly!',
               style: const TextStyle(
@@ -50,20 +52,37 @@ class ResultsScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+
             const SizedBox(height: 30),
-            QuestionSummary(summaryData: summaryData),
-            const SizedBox(height: 30),
-            TextButton.icon(
-              onPressed: onRestart,
-              icon: const Icon(Icons.restart_alt, color: Colors.white),
-              label: const Text(
-                'Restart Quiz!',
-                style: TextStyle(color: Colors.white, fontSize: 16),
+
+            Expanded(
+              child: SingleChildScrollView(
+                child: QuestionSummary(summaryData: summaryData),
               ),
             ),
+
+            const SizedBox(height: 20),
+
+            TextButton.icon(
+              onPressed: onRestart,
+              icon: const Icon(
+                Icons.restart_alt,
+                color: Colors.white,
+              ),
+              label: const Text(
+                'Restart Quiz!',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 25),
           ],
         ),
       ),
-    );
+    ),
+  );
   }
 }
