@@ -38,7 +38,7 @@ class ResultsScreen extends StatelessWidget {
     width: double.infinity,
     child: SafeArea(
       child: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(60),
         child: Column(
           children: [
             const SizedBox(height: 40),

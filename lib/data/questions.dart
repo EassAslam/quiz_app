@@ -1,40 +1,40 @@
 import 'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
-  QuizQuestion('How did Edwar Elric lose his arm in FMA?', [
-    'Putting his brothers soul in a suit of armor',
-    'in a duel',
-    'he never had any arms',
-    'he fell from his ninja H2 R',
+  QuizQuestion('Which company makes the Mustang?', [
+    'Ford',
+    'Toyota',
+    'BMW',
+    'Honda',
   ]),
-  QuizQuestion('What is the capital city of France?', [
-    'Paris',
-    'Lyon',
-    'Marseille',
-    'Bordeaux',
+  QuizQuestion('Which car brand is known for the 911 model?', [
+    'Porsche',
+    'Ferrari',
+    'Lamborghini',
+    'Audi',
   ]),
-  QuizQuestion('Which planet is known as the Red Planet?', [
-    'Mars',
-    'Venus',
-    'Jupiter',
-    'Saturn',
+  QuizQuestion('Which country is BMW originally from?', [
+    'Germany',
+    'Italy',
+    'USA',
+    'Japan',
   ]),
-  QuizQuestion('How many elements are listed in the periodic table?', [
-    '118',
-    '112',
-    '120',
-    '108',
+  QuizQuestion('What does SUV stand for?', [
+    'Sport Utility Vehicle',
+    'Super Utility Vehicle',
+    'Speed Utility Vehicle',
+    'Standard Urban Vehicle',
   ]),
-  QuizQuestion('Which ocean is the largest on Earth?', [
-    'Pacific Ocean',
-    'Atlantic Ocean',
-    'Indian Ocean',
-    'Arctic Ocean',
+  QuizQuestion('Which company produces the Civic?', [
+    'Honda',
+    'Nissan',
+    'Hyundai',
+    'Kia',
   ]),
-  QuizQuestion('Who painted the "Mona Lisa"?', [
-    'Leonardo da Vinci',
-    'Vincent van Gogh',
-    'Pablo Picasso',
-    'Claude Monet',
+  QuizQuestion('Which brand is known for electric cars like Model S?', [
+    'Tesla',
+    'Ford',
+    'Chevrolet',
+    'Toyota',
   ]),
 ];
